@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rbc.EmployeeService", "Rbc.EmployeeService\Rbc.EmployeeService.csproj", "{E2C34FAE-CB00-4C1B-8391-DA1395C9C37A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rbc.EmployeeService.Tests", "Rbc.EmployeeService.Tests\Rbc.EmployeeService.Tests.csproj", "{BA8A0F6C-14FB-4287-B6A9-858CED1F640F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rbc.EmployeeService.Common", "Rbc.EmployeeService.Common\Rbc.EmployeeService.Common.csproj", "{1130AD49-CCFF-435E-BC29-40F440539204}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RbC.EmployeeService.KafkaService", "RbC.EmployeeService.KafkaService\RbC.EmployeeService.KafkaService.csproj", "{6D52B156-93A5-4CCC-B180-7E308CB22E28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rbc.EmployeeService.DataAccess", "Rbc.EmployeeService.DataAccess\Rbc.EmployeeService.DataAccess.csproj", "{19E5A150-1C3F-43DE-AD30-F1488CE98ECF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2C34FAE-CB00-4C1B-8391-DA1395C9C37A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2C34FAE-CB00-4C1B-8391-DA1395C9C37A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2C34FAE-CB00-4C1B-8391-DA1395C9C37A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2C34FAE-CB00-4C1B-8391-DA1395C9C37A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA8A0F6C-14FB-4287-B6A9-858CED1F640F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA8A0F6C-14FB-4287-B6A9-858CED1F640F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA8A0F6C-14FB-4287-B6A9-858CED1F640F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA8A0F6C-14FB-4287-B6A9-858CED1F640F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1130AD49-CCFF-435E-BC29-40F440539204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1130AD49-CCFF-435E-BC29-40F440539204}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1130AD49-CCFF-435E-BC29-40F440539204}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1130AD49-CCFF-435E-BC29-40F440539204}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D52B156-93A5-4CCC-B180-7E308CB22E28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D52B156-93A5-4CCC-B180-7E308CB22E28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D52B156-93A5-4CCC-B180-7E308CB22E28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D52B156-93A5-4CCC-B180-7E308CB22E28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19E5A150-1C3F-43DE-AD30-F1488CE98ECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19E5A150-1C3F-43DE-AD30-F1488CE98ECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19E5A150-1C3F-43DE-AD30-F1488CE98ECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19E5A150-1C3F-43DE-AD30-F1488CE98ECF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {90718B5E-18E6-41ED-8A9E-7519C1288575}
+	EndGlobalSection
+EndGlobal
