@@ -1,6 +1,9 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Rbc.EmployeeService.Common.Configurations;
+using Rbc.EmployeeService.Services.Employee;
+using Rbc.EmployeeService.Services.Logger;
+using RbC.EmployeeService.KafkaService.Producer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,10 +13,14 @@ namespace Rbc.EmployeeService.Extensions
 {
     public static class ServiceCollectionExtension
     {
-        public static IServiceCollection ApplicationServices(IServiceCollection services, IConfiguration config)
+        public static IServiceCollection ApplicationServices(this IServiceCollection services, IConfiguration config)
         {
 
             services.Configure<KafkaEmployerSettings>(config.GetSection("Kafka:EmployerSettings"));
+            services.AddSingleton<ProducerClientHandle>();
+            services.AddSingleton<IEmployeeKafkaService, EmployeeKafkaService>();
+            services.AddSingleton<IActivityLogger, ActivityLogger>();
+            
 
             return services;
         }

@@ -9,4 +9,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Rbc.EmployeeService.Common\Rbc.EmployeeService.Common.csproj" />
+    <ProjectReference Include="..\Rbc.EmployeeService.DataAccess\Rbc.EmployeeService.DataAccess.csproj" />
+    <ProjectReference Include="..\RbC.EmployeeService.KafkaService\RbC.EmployeeService.KafkaService.csproj" />
+  </ItemGroup>
+
 </Project>
