@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rbc.EmployeeService.Tests",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rbc.EmployeeService.Common", "Rbc.EmployeeService.Common\Rbc.EmployeeService.Common.csproj", "{1130AD49-CCFF-435E-BC29-40F440539204}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RbC.EmployeeService.KafkaService", "RbC.EmployeeService.KafkaService\RbC.EmployeeService.KafkaService.csproj", "{6D52B156-93A5-4CCC-B180-7E308CB22E28}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rbc.EmployeeService.DataAccess", "Rbc.EmployeeService.DataAccess\Rbc.EmployeeService.DataAccess.csproj", "{19E5A150-1C3F-43DE-AD30-F1488CE98ECF}"
 EndProject
 Global
@@ -31,10 +29,6 @@ Global
 		{1130AD49-CCFF-435E-BC29-40F440539204}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1130AD49-CCFF-435E-BC29-40F440539204}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1130AD49-CCFF-435E-BC29-40F440539204}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6D52B156-93A5-4CCC-B180-7E308CB22E28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6D52B156-93A5-4CCC-B180-7E308CB22E28}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6D52B156-93A5-4CCC-B180-7E308CB22E28}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6D52B156-93A5-4CCC-B180-7E308CB22E28}.Release|Any CPU.Build.0 = Release|Any CPU
 		{19E5A150-1C3F-43DE-AD30-F1488CE98ECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{19E5A150-1C3F-43DE-AD30-F1488CE98ECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19E5A150-1C3F-43DE-AD30-F1488CE98ECF}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -20,7 +20,7 @@ namespace Rbc.EmployeeService.Services.Logger
         public void LogRequestResponse(string response)
         {
 
-            _logger.LogError(response.ToString());
+            _logger.LogInformation(response.ToString());
         }
     }
 }

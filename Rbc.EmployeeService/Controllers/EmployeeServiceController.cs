@@ -1,11 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Microsoft.AspNetCore.Mvc;
 using Rbc.EmployeeService.Common.Models;
 using System.Threading.Tasks;
 using Rbc.EmployeeService.Services.Employee;
+using Rbc.EmployeeService.Services.Logger;
 
 namespace Rbc.EmployeeService.Controllers
 {
@@ -14,17 +11,19 @@ namespace Rbc.EmployeeService.Controllers
     public class EmployeeServiceController : ControllerBase
     {
         private readonly IEmployeeKafkaService _employeeService;
-        
-        public EmployeeServiceController(IEmployeeKafkaService employeeKafkaService)
+        private readonly IActivityLogger _logger;
+        public EmployeeServiceController(IEmployeeKafkaService employeeKafkaService, IActivityLogger logger)
         {
             _employeeService = employeeKafkaService;
+            _logger = logger;
 
         }
 
         [HttpPost("publish")]
         public async  Task<IActionResult> PublishEmployeeInfo(EmployeeModel model)
         {
-              _employeeService.Produce(model);
+            _logger.LogRequestResponse("request recived");
+              _employeeService.WriteMessage(model);
 
             return Ok();
             
